@@ -5,7 +5,7 @@
 	"scripts": {
 		"clean": "rm -rf out",
 		"watch": "tsc --watch & tsc-alias --watch --silent & nodemon --quiet --ext ts --watch src --exec 'eslint .'",
-		"build": "yarn run clean && yarn run lint && tsc && tsc-alias && yarn run makeExecutable",
+		"build": "yarn run clean && yarn run lint && tsc && tsc-alias",
 		"lint": "eslint ."
 	},
 	"devDependencies": {
