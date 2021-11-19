@@ -6,7 +6,8 @@
 		"clean": "rm -rf out",
 		"watch": "tsc --watch & tsc-alias --watch --silent & nodemon --quiet --ext ts --watch src --exec 'yarn run --silent lint'",
 		"build": "yarn run clean && yarn run lint && tsc && tsc-alias",
-		"lint": "eslint ."
+		"lint": "eslint .",
+		"release": "yarn run build && yarn publish --access public --non-interactive"
 	},
 	"devDependencies": {
 		"@corioders/templates-manager-types": "0.0.7",
